@@ -20,7 +20,6 @@ const emailLink = document.getElementById('email-link');
 const repoCount = document.getElementById('repo-count');
 const followersCount = document.getElementById('followers-count');
 const followingCount = document.getElementById('following-count');
-const projectsContainer = document.getElementById('projects-container');
 const skillsContainer = document.getElementById('skills-container');
 
 // Initialize the application
@@ -174,9 +173,6 @@ async function fetchGitHubData() {
 
         // Update profile information
         updateProfileInfo(userData);
-        
-        // Update repositories
-        updateProjects(reposData);
         
         // Generate skills from repositories
         generateSkills(reposData);
